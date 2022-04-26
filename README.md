@@ -14,8 +14,7 @@
 - 增加了个人证件照
 - shade增加灰色背景突出
 - 增加了背景水印图片，background
-- 完善的 Unicode 字体支持, 因为用的是 \XeLaTeX\ 嘛
-- 完美的中文支持，使用 Adobefonts
+- 使用XeLaTeX，完善Adobefonts中文字体支持
 - 支持 FontAwesome
 
 ### 效果输出
