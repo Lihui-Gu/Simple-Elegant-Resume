@@ -1,0 +1,110 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+\usepackage{framed}
+
+\usepackage{color}  % 改变背景颜色
+\definecolor{shadecolor}{rgb}{0.92,0.92,0.92} % 灰色
+
+\usepackage{background}
+\backgroundsetup{scale=0.4, angle=0, opacity = 0.15,  % 放缩  旋转  透明度
+contents = {\includegraphics[width=\paperwidth, height=\paperwidth, keepaspectratio] {image/school.png}}}  % 添加背景图片
+
+\usepackage{multirow}
+\usepackage{graphicx}%插入图片
+\usepackage{tabularx,booktabs}%控制版面
+\usepackage{float}%控制图片位置
+\usepackage{setspace}% 调整行间距
+\usepackage{multicol}%分栏
+\usepackage{geometry}%设置页边距
+\usepackage{multirow}%合并行
+\usepackage{makecell}%合并行
+\usepackage{array}%设置表格行距
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\renewcommand\arraystretch{1.5}
+\begin{tabular}{p{12cm}  p{5cm}}
+\textbf{\name{Your Name}} & \multirowcell{5}{\includegraphics[scale=0.27]{image/person.jpg}}\\
+\faEnvelope \ glh9803@outlook.com  \  \faPhone \ (+86)\ 158243436819 & \\
+\faHome \ https://lihui-gu.github.io \ \faGithub \ https://github.com/Lihui-Gu & \\
+\faUniversity \ Zhejiang University of Technology & \\
+\end{tabular}
+
+\begin{shaded} 
+\section{\faGraduationCap  教育背景}
+\datedsubsection{\textbf{浙江工业大学},计算机科学与技术+智能科学与技术双专业,\textit{在读本科生}}{2019.9 至今}
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{GPA：**/**}；\textbf{成绩排名：**/**}；\textbf{综测排名：**/**}
+  \item \textbf{主修课程}: 
+  \item \textbf{英语能力}：
+\end{itemize}
+
+\end{shaded}
+
+% \section{\faCogs\ IT 技能}
+\section{\faCogs 技术能力}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item \textbf{编程语言}: Python, C ,Java , JavaScrip
+  \item \textbf{操作系统,数据库与工程构建}: Linux/MySQL/MongoDB/Git/Latex
+  \item \textbf{深度学习框架}: Pytorch > Tensorflow
+\end{itemize}
+
+% \end{itemize}
+
+\section{ \faObjectGroup 项目经历}
+\datedsubsection{\textbf{Project Name}, 工作职位}{start time-end time}
+\begin{itemize}
+  \item Put some project introduction and results content
+  \item 
+  \item 
+\end{itemize}
+
+\datedsubsection{\textbf{Project Name}, 工作职位}{start time-end time}
+\begin{itemize}
+  \item 
+  \item 
+  \item 
+\end{itemize}
+
+\datedsubsection{\textbf{Project Name}, 工作职位}{start time-end time}
+\begin{itemize}
+  \item 
+  \item 
+  \item 
+\end{itemize}
+
+\section{\faNeuter 科研经历}
+\datedsubsection{\textbf{Your Title}} {start time-end time}
+\begin{itemize}
+  \item 
+\end{itemize}
+\datedsubsection{\textbf{Your Title}} {start time-end time}
+\begin{itemize}
+  \item 
+\end{itemize}
+
+\section{\faTrophy 竞赛获奖}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item Your Competition situation
+  \item \dots
+  \item \dots
+\end{itemize}
+
+\section{\faHandPeaceO 其他}
+% increase linespacing [parsep=0.5ex]
+\begin{itemize}[parsep=0.2ex]
+  \item Your hobby \dots
+  \item Other replenish \dots
+  \item \textit{更多项目介绍}, https://lihui-gu.github.io
+\end{itemize}
+
+\end{document}

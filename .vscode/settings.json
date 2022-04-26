@@ -1,0 +1,116 @@
+{"latex-workshop.showContextMenu":true,                //右键菜单
+    "latex-workshop.intellisense.package.enabled": true,  //根据加载的包，自动完成命令或包  
+    "latex-workshop.latex.autoBuild.run": "never",        //禁止保存文件时自动build  
+    "latex-workshop.latex.recipes": [  
+      {  
+        "name": "latexmk",  
+        "tools": [  
+          "latexmk"  
+        ]  
+      },  
+      {  
+        "name": "PDFlatex",  
+        "tools": [  
+          "pdflatex"  
+        ]  
+      },  
+      {  
+        "name": "pdflatex -> bibtex -> pdflatex2",  
+        "tools": [  
+          "pdflatex",  
+          "bibtex",  
+          "pdflatex",  
+          "pdflatex"  
+        ]  
+      },  
+      {  
+        "name": "xelatex",  
+        "tools": [  
+          "xelatex"  
+        ]  
+      },  
+      {  
+        "name": "xelatex -> bibtex -> xelatex",  
+        "tools": [  
+          "xelatex",  
+          "bibtex",  
+          "xelatex",  
+        ]  
+      }  
+    ],  
+    "latex-workshop.latex.tools":[  
+      {  
+        "name": "latexmk",  
+        "command": "latexmk",  
+        "args": [  
+          "-synctex=1",  
+          "-interaction=nonstopmode",  
+          "-file-line-error",  
+          "-pdf",  
+          "-outdir=%OUTDIR%",  
+          "%DOC%"  
+        ],  
+        "env": {}  
+        },  
+        {  
+        "name": "pdflatex",  
+        "command": "pdflatex",  
+        "args": [  
+          "-synctex=1",  
+          "-interaction=nonstopmode",  
+          "-file-line-error",  
+          "%DOC%"  
+        ],  
+        "env": {}  
+        },  
+        {  
+        "name": "xelatex",  
+        "command": "xelatex",  
+        "args": [  
+          "-synctex=1",  
+          "-interaction=nonstopmode",  
+          "-file-line-error",  
+          "%DOC%"  
+        ],  
+        "env": {}  
+        },  
+        {  
+        "name": "bibtex",  
+        "command": "bibtex",  
+        "args": [  
+          "%DOCFILE%"  
+        ],  
+        "env": {}  
+        }  
+    ],  
+    "latex-workshop.latex.clean.fileTypes": [  //设定清理文件的类型  
+      "*.aux",  
+      "*.bbl",  
+      "*.blg",  
+      "*.idx",  
+      "*.ind",  
+      "*.lof",  
+      "*.lot",  
+      "*.out",  
+      "*.toc",  
+      "*.acn",  
+      "*.acr",  
+      "*.alg",  
+      "*.glg",  
+      "*.glo",  
+      "*.gls",  
+      "*.ist",  
+      "*.fls",  
+      "*.log",  
+      "*.fdb_latexmk",  
+      "*.nav",  
+      "*.snm",  
+      "*.synctex.gz"  
+    ],  
+    "latex-workshop.view.pdf.viewer": "tab",
+    "files.associations": {
+      "queue": "cpp",
+      "xstring": "cpp",
+      "algorithm": "cpp"
+    }, //pdf文件的预览方式
+    }
